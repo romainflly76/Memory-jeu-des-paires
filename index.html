@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<header class="">
+  <div id="jumbotron" class="jumbotron p-2">
+    <h1 class="display-1 p-3">Hello, world!</h1>
+    <p class="lead">Bienvenue sur le site du jeu du memory.</p>
+    <hr class="m-2">
+    <p id="paragraphHeader" >MEMORY CARD.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#Ancre" role="button">Jouez</a>
+    </p>
+  </div>
+</header>
+<main>
+<div class="container">
+  <section class="row justify-content-center my-5">
+    
+    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">ROCK</span></div>
+    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">CINEMA</span></div>
+    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">...?</span></div>
+    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">...?</span></div>
+    </section>
+  </div>
+
+  
+  <div class="col-8 container-fluid my-2">
+    <span id="ecran" class="btn btn-primary btn-lg d-block text-right">0</span>
+  </div>
+  <div class="col-8 container-fluid my-2">
+    <span id="nbEssais" class="btn btn-lg d-block text-right"><strong> nombre d'essais</strong></span>
+  </div>
+
+
+    
+    <!-- **************************** THEMES ***************************************-->
+    <!-- ***************************** ROCK ****************************************-->
+
+    <section class="container col-12">
+      <h2 id="Ancre" >Choisissez une carte</h2>
+    
+      <div id="Rock" class="row container-fluid justify-content-center p-O mx-0 mt-5" style="border:1px solid #cecece;" >
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+        <div class="col-4 item"></div>
+      </div>
+      
+    </section>
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-2 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div id="copyright" class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="index.html">Romain</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    
+  </main>
+   
+
+
+    
+
+
+
+
+  <!-- Add your site or application content here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
