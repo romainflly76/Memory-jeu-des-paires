@@ -1,0 +1,19 @@
+h1, h2 {
+    text-align: center;
+}
+
+#memoryRock {
+    width: 100px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;   /* gap= ecart entres les photos sur le grid*/
+
+}
+img {
+    width: 100px;     
+}
+span {
+    
+    height: 100px;
+}

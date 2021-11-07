@@ -27,128 +27,25 @@ integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChi
 
 <body>
 
-<header class="">
-  <div id="jumbotron" class="jumbotron p-2">
-    <h1 class="display-1 p-3">Hello, world!</h1>
-    <p class="lead">Bienvenue sur le site du jeu du memory.</p>
-    <hr class="m-2">
-    <p id="paragraphHeader" >MEMORY CARD.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#Ancre" role="button">Jouez</a>
-    </p>
-  </div>
-</header>
-<main>
-<div class="container">
-  <section class="row justify-content-center my-5">
-    
-    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">ROCK</span></div>
-    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">CINEMA</span></div>
-    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">...?</span></div>
-    <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">...?</span></div>
-    </section>
-  </div>
-
+  <!-- *********************** Header VIDO ***********************-->
+  <header>
+    <video class="col-12" src="vids/header.mp4" autoplay loop></video>
+    <div id="title">
+      <p class="relative">JEU DU MEMORY</p>
+    </div>
   
-  <div class="col-8 container-fluid my-2">
-    <span id="ecran" class="btn btn-primary btn-lg d-block text-right">0</span>
-  </div>
-  <div class="col-8 container-fluid my-2">
-    <span id="nbEssais" class="btn btn-lg d-block text-right"><strong> nombre d'essais</strong></span>
-  </div>
+    </header>
 
-
-    
-    <!-- **************************** THEMES ***************************************-->
-    <!-- ***************************** ROCK ****************************************-->
-
-    <section class="container col-12">
-      <h2 id="Ancre" >Choisissez une carte</h2>
-    
-      <div id="Rock" class="row container-fluid justify-content-center p-O mx-0 mt-5" style="border:1px solid #cecece;" >
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-        <div class="col-4 item"></div>
-      </div>
+<!-- ************************ Button **************************-->
+  <div class="container">
+    <section class="row justify-content-center my-5">
       
-    </section>
-
-    <footer class="bg-light text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-2 pb-0">
-        <!-- Section: Social media -->
-        <section class="mb-2">
-          <!-- Facebook -->
-          <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #3b5998;"
-            href="#!"
-            role="button"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-    
-          <!-- Twitter -->
-          <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #55acee;"
-            href="#!"
-            role="button"
-            ><i class="fab fa-twitter"></i
-          ></a>
-    
-          <!-- Linkedin -->
-          <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #0082ca;"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <!-- Github -->
-          <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #333333;"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-    
-      <!-- Copyright -->
-      <div id="copyright" class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="index.html">Romain</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-
-    
-  </main>
-   
-
-
-    
-
-
-
-
+      <div class="col-3 py-2"><span class="btn btn-dark btn-lg d-block">ROCK</span></div>
+      <div class="col-3 py-2"><span class="btn btn-dark btn-lg d-block">CINEMA</span></div>
+      <div class="col-3 py-2"><span class="btn btn-dark btn-lg d-block">PHOTOS</span></div>
+      <div class="col-3 py-2"><span class="btn btn-dark btn-lg d-block">ENFANTS</span></div>
+      </section>
+    </div>
   <!-- Add your site or application content here -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
