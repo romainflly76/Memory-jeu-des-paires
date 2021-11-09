@@ -93,60 +93,26 @@ body {
 }
 
 .btn {
-    font-size: 5px;
+    font-size: 15px;
     text-align: center;
 }
 
 /*************************** CARDS *****************************/
-#memoryRock {
-    width: 100px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
 
-}
 img {
-  width: 50px;    
+  width: 20vw;
+  margin: 1vh;   
 
 }
+h1 {
+  font-size: 15px;
+}
+button {
+  width: 20vh;
+}
+
 /************************* Rules Cards **************************/
 
-@media screen and (min-width: 426px) {
-#memoryRock {
-  width: 100px;
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5%;
-
-}
-img {
-width: 100px;    
-}
-.btn {
-  font-size: 10px;
-  text-align: center;
-}
-}
-
-@media screen and (min-width: 1024px) {
-  #memoryRock {
-    width: 100px;
-    height: 650px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-  
-  }
-  img {
-  width: 150px;    
-  }
-  .btn {
-    font-size: 15px;
-    text-align: center;
-  }
-  }
 
 
      /* ==========================================================================
