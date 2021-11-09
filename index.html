@@ -3,22 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Poxi Market de Préaux 76160</title>
-  <meta name="description" content="Epicerie de proximité sur Préaux Agllomeration de Rouen">
+  <title>JEu du memory</title>
+  <meta name="description" content="Jeu du memory WebDEV Afpa">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
-  <meta property="og:type" content="Epicerie">
+  <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8e1360">
-<meta name="msapplication-TileColor" content="#8e1360">
-<meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8e1360">
+  <meta name="msapplication-TileColor" content="#8e1360">
+  <meta name="theme-color" content="#ffffff">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -34,54 +34,145 @@
 
 <body>
 
- <!-- ##########################################################################################################################################################
+  <!-- ##########################################################################################################################################################
                                                                       Header video
   ########################################################################################################################################################## -->
   <div class="container">
     <div id="video" class="row justify-content-center">
-  <video class="video-fluid z-depth-1" autoplay loop controls muted>
-    <source src="vids/header.mp4" type="video/mp4" />
-  </video>
+      <video class="video-fluid z-depth-1" autoplay loop controls muted>
+        <source src="vids/header.mp4" type="video/mp4" />
+      </video>
+    </div>
   </div>
+
+
+
+  <div class="container mt-5 text-white">
+    <div class="row">
+      <h1 class="">JEU DU MEMORY, CHOISISSEZ UN THEME POUR JOUER</h1>
+
+    </div>
+
+  </div>
+  <div class="container">
+    <section class="row justify-content-center my-5">
+
+      <div class="col-3 py-2"><span onclick="fonctionDisplayRock()" class="btn btn-secondary btn-lg d-block">ROCK</span>
+      </div>
+      <div class="col-3 py-2"><span onclick="fonctionDisplayCinema()" class="btn btn-secondary btn-lg d-block">CINEMA</span></div>
+      <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">PHOTOS</span></div>
+      <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">ENFANTS</span></div>
+    </section>
+
+  </div>
+
+  <div id="memoryRock" class="container hidden">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="carte" src="img/Rock/eclair.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div id="memoryCinema" class="container hidden">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="d-flex col-3">
+        <img class="" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+      <div class="d-flex col-3">
+        <img class="card" src="img/cinema/Cinema.jpg" alt="">
+      </div>
+    </div>
   </div>
 
 
-  
-
-    <div class="container">
-        <section class="row justify-content-center my-5">
-          
-          <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">ROCK</span></div>
-          <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">CINEMA</span></div>
-          <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">PHOTOS</span></div>
-          <div class="col-3 py-2"><span class="btn btn-secondary btn-lg d-block">ENFANTS</span></div>
-          </section>
-        </div>
-
-        <main class="container">
-
-            <div class="row">
-            <div id="memoryRock" class="col-12">
-              <img src="img/rock/eclair.png" id="test" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-              <img src="img/rock/eclair.png" alt="">
-          </div>
-          </div>
-          
-          </main>
 
 
 
@@ -95,69 +186,47 @@
 
 
 
-  
-  
-<!-- **************************** Footer First mobile****************$-->
+  <!-- **************************** Footer First mobile****************$-->
 
-<footer id="footerMobile" class="bg-black text-center text-white mt-5">
-<!-- Grid container -->
-<div class="container p-4 pb-0">
-  <!-- Section: Social media -->
-  <section class="mb-4">
-    <!-- Facebook -->
-    <a
-      class="btn btn-primary btn-floating m-1"
-      style="background-color: #3b5998;"
-      href="#!" target="_blank" alt="facebook"
-      role="button"
-      ><i class="fab fa-facebook-f"></i
-    ></a>
+  <footer id="footerMobile" class="bg-black text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" target="_blank"
+          alt="facebook" role="button"><i class="fab fa-facebook-f"></i></a>
 
-    <!-- Twitter -->
-    <a
-      class="btn btn-primary btn-floating m-1"
-      style="background-color: #55acee;"
-      href="#!"
-      role="button"
-      ><i class="fab fa-twitter"></i
-    ></a>
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
 
-    <!-- Google -->
-    <a
-      class="btn btn-primary btn-floating m-1"
-      style="background-color: #dd4b39;"
-      href="#!" alt="Google Page"
-      role="button"
-      ><i class="fab fa-google"></i
-    ></a>
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" alt="Google Page"
+          role="button"><i class="fab fa-google"></i></a>
 
-    <!-- Instagram -->
-    <a
-      class="btn btn-primary btn-floating m-1"
-      style="background-color: #ac2bac;"
-      href="#!"
-      role="button"
-      ><i class="fab fa-instagram"></i
-    ></a>
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
 
-    
-    
-  </section>
-  <!-- Section: Social media -->
-</div>
-<!-- Grid container -->
 
-<!-- Copyright -->
-<div class="text-center p-3" style="background-color: black;">
-  © 2020 Copyright:
-  <a class="text-white" href="index.html">Jeu des paires</a>
-</div>
-<!-- Copyright -->
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"></script>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: black;">
+      © 2020 Copyright:
+      <a class="text-white" href="index.html">Jeu des paires</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
