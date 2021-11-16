@@ -11,13 +11,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-  }
-  
-  /*
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
    *
@@ -26,96 +26,132 @@
    *
    * Customize the background color to match your design.
    */
-  
-  ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  
-  ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  
-  /*
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
    * A better looking default horizontal rule
    */
-  
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
-  
-  /*
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
-  }
-  
-  /*
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
    * Remove default fieldset styles.
    */
-  
-  fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /*
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
    * Allow only vertical resizing of textareas.
    */
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  /* ==========================================================================
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
      Author's custom styles
      ========================================================================== */
 
 body {
-    background-color: black;
-    margin: 0 auto;
+  background-color: black;
+  margin: 0 auto;
 }
 
 .btn {
-    font-size: 15px;
-    text-align: center;
+  font-size: 7px;
+  text-align: center;
+  font-family: "Special Elite", cursive;
 }
-
+#video {
+  position: relative;
+}
+h2 {
+  position: absolute;
+  top: 40%;
+  font-size: 50px;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-family: "Special Elite", cursive;
+}
 /*************************** CARDS *****************************/
 
 img {
   width: 20vw;
-  margin: 1vh;   
-
+  margin: 1vh;
 }
 h1 {
   font-size: 15px;
+  font-family: "Special Elite", cursive;
 }
 button {
   width: 20vh;
 }
+/*************************** FOOTER *****************************/
 
+#footerMobile,
+text {
+  font-size: 2vh;
+}
+#footerMobile .btn {
+  font-size: 1em;
+}
 /************************* Rules Cards **************************/
-
-
-
-     /* ==========================================================================
+@media screen and (min-width: 425px) {
+  .btn {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 570px) {
+  .btn {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
