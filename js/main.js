@@ -12,6 +12,7 @@ function fonctionDisplayPhotos() {
   photos.classList.toggle("hidden");
 }
 
+let count = 0;
 let albums = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 console.log(albums);
 
@@ -25,8 +26,14 @@ function cards() {
   let cardrocks = document.getElementsByClassName("carte");
   // Boucle for of pour parcourir le tableau d'images
   for (let i = 0; i <= 16; i++) {
-    cardrocks[i].src = "img/Rock/album" + albums[i + 1] + ".jpg";
-    console.log(cardrocks);
+    cardrocks[i].onclick = function () {
+      cardrocks[i].src = "img/Rock/album" + albums[i] + ".jpg";
+      console.log(cardrocks[i].src);
+      count++;
+      if (count === 2) {
+      }
+    };
+    // cardrocks[i].src = "img/Rock/album" + albums[i + 1] + ".jpg";
   }
 }
 cards();
