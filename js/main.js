@@ -24,13 +24,39 @@ shuffle();
 
 function cards() {
   let cardrocks = document.getElementsByClassName("carte");
+  const pairVerify = [];
+  const pairSuccess = [];
   // Boucle for of pour parcourir le tableau d'images
   for (let i = 0; i <= 16; i++) {
     cardrocks[i].onclick = function () {
-      cardrocks[i].src = "img/Rock/album" + albums[i] + ".jpg";
-      console.log(cardrocks[i].src);
-      count++;
-      if (count === 2) {
+      pairVerify.push([albums[i], i]);
+
+      if (pairVerify.length <= 2) {
+        // this.src = "img/Rock/album" + albums[i] + ".jpg";
+        cardrocks[i].src = "img/Rock/album" + albums[i] + ".jpg";
+      }
+
+      if (pairVerify.length >= 2) {
+        pairVerify.splice(2, 1);
+      }
+
+      if (pairVerify[1] !== undefined) {
+        if (pairVerify[0][0] === pairVerify[1][0]) {
+          pairSuccess.push(pairVerify[0][0]);
+          pairVerify.splice(0, 2);
+        } else {
+          setTimeout(() => {
+            cardrocks[pairVerify[0][1]].src = "img/Sans titre.png";
+            cardrocks[pairVerify[1][1]].src = "img/Sans titre.png";
+            pairVerify.splice(0, 2);
+          }, 2000);
+        }
+      }
+
+      if (pairSuccess.length === 8) {
+        setTimeout(() => {
+          alert("Vous avez gagner");
+        }, 2000);
       }
     };
     // cardrocks[i].src = "img/Rock/album" + albums[i + 1] + ".jpg";
